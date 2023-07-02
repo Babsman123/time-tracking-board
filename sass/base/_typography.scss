@@ -1,0 +1,66 @@
+.user-details {
+  &__name {
+    p {
+      font-size: 1.5rem;
+      font-weight: 200;
+      color: whitesmoke;
+    }
+    h1 {
+      color: white;
+      font-size: 3rem;
+    }
+  }
+}
+
+.user-time {
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 0.9rem;
+    cursor: pointer;
+    display: block;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+
+    &:hover {
+      color: $user-color;
+    }
+  }
+}
+.head {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+
+  .head-track {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+
+    .work {
+      font-weight: bold;
+    }
+  }
+
+  .time {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  .text-color {
+    color: hsl(236, 100%, 87%);
+  }
+}
+@media (max-width: 425px) {
+  .head {
+    &-time {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 3rem;
+    }
+  }
+}

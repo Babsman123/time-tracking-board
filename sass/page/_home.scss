@@ -1,0 +1,109 @@
+.user-info {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  .user-details {
+    display: flex;
+    flex-direction: column;
+    background-color: $bg-dash-primary;
+    padding: 2rem 2rem;
+    height: 80%;
+    border-radius: 1rem;
+    z-index: 100;
+    position: relative;
+    margin-bottom: -1rem;
+    &__img {
+      width: 7rem;
+      height: 7rem;
+      border: 2px solid white;
+      border-radius: 10rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &__name {
+      margin-top: 4rem;
+    }
+  }
+
+  .user-time {
+    height: 30%;
+    background-color: $bg-dash-secondary;
+    padding: 6rem 2rem;
+    // padding-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+}
+.grid-container {
+  width: 80%;
+  margin-left: 2rem;
+}
+.track-work {
+  .bg {
+    background-color: $bg-dash-secondary;
+  }
+  .back {
+    background-repeat: no-repeat;
+    background-position: top 0rem right 1.5rem;
+  }
+  .work-bg {
+    background-image: url(../images/icon-work.svg);
+    background-color: $bg-dash-work;
+  }
+  .play-bg {
+    background-image: url(../images/icon-play.svg);
+    background-color: $bg-dash-play;
+  }
+  .study-bg {
+    background-image: url(../images/icon-study.svg);
+    background-color: $bg-dash-study;
+  }
+  .exer-bg {
+    background-image: url(../images/icon-exercise.svg);
+    background-color: $bg-dash-exercise;
+  }
+  .social-bg {
+    background-image: url(../images/icon-social.svg);
+    background-color: $bg-dash-social;
+  }
+  .self-bg {
+    background-image: url(../images/icon-self-care.svg);
+    background-color: $bg-dash-self;
+  }
+}
+@media (max-width: 425px) {
+  .user-info {
+    width: 100%;
+    margin-bottom: 3rem;
+    .user-details {
+      flex-direction: row;
+      padding: 2rem 1rem;
+      align-items: center;
+      justify-content: space-around;
+
+      &__name {
+        margin-top: 0rem;
+      }
+    }
+    .user-time {
+      height: 0%;
+      background-color: $bg-dash-secondary;
+      padding: 2rem 0rem;
+      padding-top: 3rem;
+      // padding-bottom: 7rem;
+      flex-direction: row;
+      text-align: center;
+      align-items: center;
+    }
+  }
+  .grid-container {
+    width: 100%;
+    margin-left: 0rem;
+  }
+}

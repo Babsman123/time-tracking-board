@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="track-container">
+        <div class="user-info">
+          <div class="user-details">
+            <div class="user-details__img">
+              <img src="./images/image-jeremy.png" alt="jeremy" />
+            </div>
+            <div class="user-details__name">
+              <p>Report for</p>
+              <h1>Jeremy Robson</h1>
+            </div>
+          </div>
+          <div class="user-time">
+            <p class="daily">Daily</p>
+            <p class="weekly">Weekly</p>
+            <p class="monthly">Monthly</p>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="grid-item">
+            <div class="track-work">
+              <div class="bg-height work-bg back"></div>
+              <div class="bg work">
+                <div class="head">
+                  <div class="head-track">
+                    <h3 class="work">Work</h3>
+                    <span>&#8230;</span>
+                  </div>
+                  <div class="head-time">
+                    <p class="time work-current">32hrs</p>
+                    <p class="text-color">
+                      Last Week - <span class="work-previous">36hrs</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="track-work">
+              <div class="bg-height play-bg back"></div>
+              <div class="bg play">
+                <div class="head">
+                  <div class="head-track">
+                    <h3 class="work">Play</h3>
+                    <span>&#8230;</span>
+                  </div>
+                  <div class="head-time">
+                    <p class="time play-current">10hrs</p>
+                    <p class="text-color">
+                      Last Week - <span class="play-previous">8hrs</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="track-work">
+              <div class="bg-height study-bg back"></div>
+              <div class="bg study">
+                <div class="head">
+                  <div class="head-track">
+                    <h3 class="work">Study</h3>
+                    <span>&#8230;</span>
+                  </div>
+                  <div class="head-time">
+                    <p class="time study-current">4hrs</p>
+                    <p class="text-color">
+                      Last Week - <span class="study-previous">7hrs</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="track-work">
+              <div class="bg-height exer-bg back"></div>
+              <div class="bg exer">
+                <div class="head">
+                  <div class="head-track">
+                    <h3 class="work">Exercise</h3>
+                    <span>&#8230;</span>
+                  </div>
+                  <div class="head-time">
+                    <p class="time exer-current">4hrs</p>
+                    <p class="text-color">
+                      Last Week - <span class="exer-previous">5hrs</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="track-work">
+              <div class="bg-height social-bg back"></div>
+              <div class="bg social">
+                <div class="head">
+                  <div class="head-track">
+                    <h3 class="work">Social</h3>
+                    <span>&#8230;</span>
+                  </div>
+                  <div class="head-time">
+                    <p class="time social-current">5hrs</p>
+                    <p class="text-color">
+                      Last Week - <span class="social-previous">10hrs</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="track-work">
+              <div class="bg-height self-bg back"></div>
+              <div class="bg self">
+                <div class="head">
+                  <div class="head-track">
+                    <h3 class="work">Self Care</h3>
+                    <span>&#8230;</span>
+                  </div>
+                  <div class="head-time">
+                    <p class="time self-current">2hrs</p>
+                    <p class="text-color">
+                      Last Week - <span class="self-previous">2hrs</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/Babsman123">Tunde Adelanie</a>.
+    </div>
+    <script src="./js/getDaily.component.js"></script>
+    <script src="./js/getWeekly.component.js"></script>
+    <script src="./js/getMonthly.component.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

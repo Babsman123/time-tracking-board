@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+.container {
+  background-color: #0f1424;
+  height: 100%;
+  width: 100%;
+  padding: 3rem;
+  position: relative; }
+
+.user-details__name p {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: whitesmoke; }
+
+.user-details__name h1 {
+  color: white;
+  font-size: 3rem; }
+
+.user-time p {
+  font-size: 1.5rem;
+  margin-bottom: 0.9rem;
+  cursor: pointer;
+  display: block;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  width: 100%; }
+  .user-time p:hover {
+    color: #bdc1ff; }
+
+.head {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem; }
+  .head .head-track {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 1.3rem; }
+    .head .head-track .work {
+      font-weight: bold; }
+  .head .time {
+    font-size: 4rem;
+    margin-bottom: 1rem; }
+  .head .text-color {
+    color: #bdc1ff; }
+
+@media (max-width: 425px) {
+  .head-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 3rem; } }
+
+.track-container {
+  max-width: 90rem;
+  height: 100%;
+  margin: 15rem auto;
+  display: flex; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  position: relative; }
+  .grid-container .grid-item {
+    display: flex;
+    flex-direction: column; }
+    .grid-container .grid-item .track-work {
+      height: 100%; }
+      .grid-container .grid-item .track-work .bg-height {
+        height: 30%;
+        margin-bottom: -1rem;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem; }
+      .grid-container .grid-item .track-work .bg {
+        height: 75%;
+        border-radius: 1rem; }
+
+@media (max-width: 425px) {
+  .track-container {
+    height: 100%;
+    flex-direction: column;
+    margin: 5rem auto; }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 3rem;
+    position: relative; } }
+
+.user-info {
+  width: 20%;
+  display: flex;
+  flex-direction: column; }
+  .user-info .user-details {
+    display: flex;
+    flex-direction: column;
+    background-color: #5847eb;
+    padding: 2rem 2rem;
+    height: 80%;
+    border-radius: 1rem;
+    z-index: 100;
+    position: relative;
+    margin-bottom: -1rem; }
+    .user-info .user-details__img {
+      width: 7rem;
+      height: 7rem;
+      border: 2px solid white;
+      border-radius: 10rem; }
+      .user-info .user-details__img img {
+        width: 100%;
+        height: 100%; }
+    .user-info .user-details__name {
+      margin-top: 4rem; }
+  .user-info .user-time {
+    height: 30%;
+    background-color: #1c1f4a;
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem; }
+
+.grid-container {
+  width: 80%;
+  margin-left: 2rem; }
+
+.track-work .bg {
+  background-color: #1c1f4a; }
+
+.track-work .back {
+  background-repeat: no-repeat;
+  background-position: top 0rem right 1.5rem; }
+
+.track-work .work-bg {
+  background-image: url(../images/icon-work.svg);
+  background-color: #ff8c66; }
+
+.track-work .play-bg {
+  background-image: url(../images/icon-play.svg);
+  background-color: #56c2e6; }
+
+.track-work .study-bg {
+  background-image: url(../images/icon-study.svg);
+  background-color: #ff5c7c; }
+
+.track-work .exer-bg {
+  background-image: url(../images/icon-exercise.svg);
+  background-color: #4acf81; }
+
+.track-work .social-bg {
+  background-image: url(../images/icon-social.svg);
+  background-color: #7536d3; }
+
+.track-work .self-bg {
+  background-image: url(../images/icon-self-care.svg);
+  background-color: #f1c65b; }
+
+@media (max-width: 425px) {
+  .user-info {
+    width: 100%;
+    margin-bottom: 3rem; }
+    .user-info .user-details {
+      flex-direction: row;
+      padding: 2rem 1rem;
+      align-items: center;
+      justify-content: space-around; }
+      .user-info .user-details__name {
+        margin-top: 0rem; }
+    .user-info .user-time {
+      height: 0%;
+      background-color: #1c1f4a;
+      padding: 2rem 0rem;
+      padding-top: 3rem;
+      flex-direction: row;
+      text-align: center;
+      align-items: center; }
+  .grid-container {
+    width: 100%;
+    margin-left: 0rem; } }

@@ -1,0 +1,43 @@
+.track-container {
+  max-width: $grid-width;
+  height: 100%;
+  margin: 15rem auto;
+  display: flex;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  position: relative;
+
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    .track-work {
+      height: 100%;
+      .bg-height {
+        height: 30%;
+        margin-bottom: -1rem;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+      }
+      .bg {
+        height: 75%;
+        border-radius: 1rem;
+      }
+    }
+  }
+}
+@media (max-width: 425px) {
+  .track-container {
+    height: 100%;
+    flex-direction: column;
+    margin: 5rem auto;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 3rem;
+    position: relative;
+  }
+}

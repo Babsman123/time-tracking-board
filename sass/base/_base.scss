@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  //defines what 1rem is and base font for the project
+  font-size: 62.5%;
+}
+body {
+}
+.container {
+  background-color: $bg-primary;
+  height: 100%;
+  width: 100%;
+  padding: 3rem;
+  position: relative;
+}

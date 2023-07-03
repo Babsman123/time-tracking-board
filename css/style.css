@@ -13,6 +13,9 @@ html {
   padding: 3rem;
   position: relative; }
 
+.container {
+  font-family: "Red Hat Display", sans-serif; }
+
 .user-details__name p {
   font-size: 1.5rem;
   font-weight: 200;
